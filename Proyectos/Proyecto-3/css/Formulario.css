@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+body{
+   margin: 0;
+   padding: 0;
+}
+.contenedor{
+    display: flex;
+    height: 100vh;
+    border: 1px solid #333;
+}
+.panelIzq{
+    flex: 1;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.panelIzq h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.panelIzq p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.panelIzq button{
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #eee;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.panelDer{
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.panelDer h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.botonRed{
+    margin-bottom: 20px;
+}
+.botonRed button{
+    margin: 0 5px;
+    padding: 8px 15px;
+}
+.form-g{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+padding: 8px;
+width: 100%;
+}
+.checkbox-g{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.checkbox-g input{
+    margin-right: 5px;
+}
+.checkbox-g strong{
+    font-weight: bold;
+}
+.submit-button{
+    padding: 8px 15px;
+}
