@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang=" es">
+    <head>
+        <meta charsegt="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Formulario-Encuesta</title>
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <div id="Contenedor" style="width: 500px;"></div>
+        <h2>Encuesta laboral</h2>
+
+        <form id="formulario1" name="formulario1" method="post" action="data.php"></form>
+        <fieldset id="datos_laborales">
+            <legend>Datos Laborales</legend>
+            <label for="nombre">Nombre y Apellidos</label>
+            <input type="text" name="nombre" id="nombre"><br>
+            <p></p>
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion"><br>
+            <p></p>
+            <label for="telenum">Telef/ Cel.</label>
+            <input type="text" name="telenum" id="telenum"><br>
+            <p></p>
+            <label for="fechaIn">Fecha Ingreso</label>
+            <select name="fechaIn" id="fechaIn">
+                <option value="X" selected="selected">...</option>
+                <option value="A" >15/03/2025</option>
+                <option value="B" >31/03/2025</option>
+                <option value="C" >15/04/2025</option>
+            </select><br>
+            <p></p>
+            <label for="puesto">Puesto de trabajo</label>
+            <select name="puesto" id="puesto">
+                <option value="X" selected="selected">...</option>
+                <option value="A" >Trabajo1</option>
+                <option value="B" >Trabajo2</option>
+                <option value="C" >Trabajo3</option>
+            </select><br>
+            <p></p>
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni"><br>
+            <p></p>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email"><br>
+            <p></p>
+        </fieldset>
+        <p></p>
+        <form id="formulario2" name="formulario2" method="post" action="data.php"></form>
+        <fieldset id="estado_civil">
+            <legend>Estado civil</legend>
+            <input type="radio" name="soltero" id="soltero">
+            <label for="soltero">Soltero</label><br>
+            <p></p>
+            <input type="radio" name="casado" id="casado">
+            <label for="casado">Casaso</label><br>
+            <p></p>
+            <input type="radio" name="divorciado" id="divorciado">
+            <label for="divorciado">Divorciado</label><br>
+            <p></p>
+        </fieldset>
+        <p></p>
+        <form id="formulario3" name="formulario3" method="post" action="data.php"></form>
+        <fieldset id="nivel_satisfacion">
+            <legend>Nivel de satisfacción</legend>
+            <input type="checkbox" name="opcion1" id="opcion1">
+            <label for="opcion1">Se siente satisfecho con el trabajo con el que realiza</label><br>
+            <p></p>
+            <input type="checkbox" name="opcion2" id="opcion2">
+            <label for="opcion2">Los canales de comunicación son adecuados</label><br>
+            <p></p>
+            <input type="checkbox" name="opcion3" id="opcion3">
+            <label for="opcion3">El trato de los directivos es cordial y efectivo</label><br>
+            <p></p>
+            <input type="checkbox" name="opcion4" id="opcion4">
+            <label for="opcion4">El ambiente laboral es el adecuado para mi trabajo</label><br>
+            <p></p>
+        </fieldset>
+        <p></p>
+        <form id="formulario4" name="formulario4" method="post" action="data.php"></form>
+        <fieldset id="observaciones">
+            <legend>Observaciones</legend>
+            <textarea name="obser" id="obser" rows="14" cols="50"></textarea>
+        </fieldset><br>
+        <p></p>
+        <div id="botones">
+            <input type="reset" class="btn" value="Nuevo">
+            <input type="submit" class="btn" value="Enviar">
+        </div>
+
+    </body>
